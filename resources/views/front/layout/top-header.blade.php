@@ -39,7 +39,7 @@
                                 <div class="main-menu d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">
-                                            <li><a href="#">Home</a></li>
+                                            <li><a href="{{route('front.welcome')}}">Home</a></li>
                                             <li><a href="{{route('front.about')}}">About</a></li>
                                             <li><a href="#">Services</a></li>
                                             <li><a href="#">Blog</a>
