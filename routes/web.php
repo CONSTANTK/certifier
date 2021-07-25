@@ -12,14 +12,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+//Mike-Berg New Implementations
+Route::get('/', [\App\Http\Controllers\Front\WelcomeController::class,'index'])->name('front.welcome');
+Route::get('about-us', [\App\Http\Controllers\Front\WelcomeController::class,'about'])->name('front.about');
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/', function () {
-    return view('ourservices');
-});
+Route::get('contact-us', [\App\Http\Controllers\Front\ContactUsController::class,'index'])->name('front.contact.us');
+Route::post('contact-us/store', [\App\Http\Controllers\Front\ContactUsController::class,'processContactUs'])->name('front.contact.us.process');
 
 
 Route::get('payment', function () {
