@@ -49,7 +49,6 @@
     </script>
 @endif
 
-{{--
 @if ($errors->any())
     <script>
         Swal.fire({
@@ -60,4 +59,4 @@
             timer: 1500
         })
     </script>
-@endif--}}
+@endif
