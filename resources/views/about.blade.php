@@ -185,8 +185,8 @@ body {
                     <div class="panel panel-heading" align="center"><h6 style="font-size:20px">  
                    <b> Welcome To CERTFIER</b></h6>
 <div align="center">
- <h4 font-color:White; text-align:center;>
- <h3  style="color:red;"><b>About Us</b></h3><img src="about1.PNG"  width="80" height="60"><br>  <br>
+ <h4 style="font-color:White; text-align:center;" >
+ <h3  style="color:red;"><b>About Us</b></h3><img src="{{asset('assets/address.png')}}"  width="80" height="60"><br>  <br>
   <p>
       Since 1984, the Meetro One brand has been recognized for consistency in delivering <br><br>professional security services. With our management team's decades of combined<br><br> loss prevention and security management expeerience, we tailor our service to fully <br><br>integrate into the client's loss prevention/ security program and return on investment.
   </p>
