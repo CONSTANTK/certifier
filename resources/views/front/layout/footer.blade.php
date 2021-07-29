@@ -8,11 +8,11 @@
                     <div class="row justify-content-between">
                         <div class="col-xl-6 col-lg-8 col-md-8">
                             <div class="wantToWork-caption wantToWork-caption2">
-                                <h2>We Understand The Importance Approaching Each Work!</h2>
+                                <h2>We Understand The Importance of certificate verification!</h2>
                             </div>
                         </div>
                         <div class="col-xl-3 col-lg-4">
-                            <span class="contact-number f-right">+ 1 212-683-9756</span>
+                            <span class="contact-number f-right">+ 233 246-623-172 <br> +233 204 038 261</span>
                         </div>
                     </div>
                 </div>
@@ -49,11 +49,11 @@
                             <div class="footer-tittle">
                                 <h4>RESOURCES</h4>
                                 <ul>
-                                    <li><a href="#">Home Insurance</a></li>
-                                    <li><a href="#">Travel Insurance</a></li>
-                                    <li><a href="#"> Car Insurance</a></li>
-                                    <li><a href="#"> Business Insurance</a></li>
-                                    <li><a href="#"> Heal Insurance</a></li>
+                                    <li><a href="#">Educational Certificate</a></li>
+                                    <li><a href="#">Business Certificate</a></li>
+                                    <li><a href="#"> Birth Certificate</a></li>
+                                    <li><a href="#"> Driving License</a></li>
+                                    <li><a href="#"> Road Worthy Certificate</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -66,7 +66,7 @@
                             </div>
                             <div class="footer-tittle">
                                 <div class="footer-pera">
-                                    <p class="info1">GThe trade war currently ensuing between te US anfd several natxions around thdhe globe, most fiercely with.</p>
+                                    <p class="info1">We provide you with the fastest, easiest, safest and the most reliable way of verifying certificates in Ghana.</p>
                                 </div>
                             </div>
                             <!-- Footer Social -->
@@ -86,7 +86,7 @@
                     <div class="col-lg-12">
                         <div class="footer-copy-right text-center">
                             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://certifier.com" target="_blank">Colorlib</a>
                                 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                         </div>
                     </div>

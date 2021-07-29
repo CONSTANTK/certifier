@@ -11,7 +11,7 @@
                     <div class="row">
                         <div class="col-xl-9 col-lg-9">
                             <div class="hero__caption">
-                                <h1 >Safe & Reliable <span>Logistic</span> Solutions!</h1>
+                                <h1 >Safe, Fast & Reliable <span>Certificate</span> Verification!</h1>
                             </div>
                             <!--Hero form -->
                             <form action="#" class="search-box">
@@ -44,7 +44,7 @@
                         </div>
                         <div class="info-caption">
                             <p>Call Us Anytime</p>
-                            <span>+ (123) 1800-567-8990</span>
+                            <span>+ (233) 246-623-172</span>
                         </div>
                     </div>
                 </div>
@@ -65,8 +65,8 @@
                             <span class="flaticon-place"></span>
                         </div>
                         <div class="info-caption">
-                            <p>Columbia, SC 29201</p>
-                            <span>USA, New York - 10620</span>
+                            <p>Accra, Hatso</p>
+                            <span>Ghana, Greater Accra - Mabay 70</span>
                         </div>
                     </div>
                 </div>
@@ -93,8 +93,8 @@
                             <span class="flaticon-shipped"></span>
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.html">Land Transport</a></h5>
-                            <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
+                            <h5><a href="services.html">Educational Certificate Verification </a></h5>
+                            <p>We help employers and educational institutions to verify Educational Certificates in a fast, secure, efficient and reliable way.</p>
                         </div>
                     </div>
                 </div>
@@ -104,8 +104,8 @@
                             <span class="flaticon-ship"></span>
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.html">Ship Transport</a></h5>
-                            <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
+                            <h5><a href="services.html">Business Certificate Verification</a></h5>
+                            <p>We help both governmental and non-governmental agencies to verify Business Certificates in a fast, secure, efficient and reliable way.</p>
                         </div>
                     </div>
                 </div>
@@ -115,8 +115,19 @@
                             <span class="flaticon-plane"></span>
                         </div>
                         <div class="cat-cap">
-                            <h5><a href="services.html">Air Transport</a></h5>
-                            <p>The sea freight service has grown conside rably in recent years. We spend timetting to know your processes to.</p>
+                            <h5><a href="services.html">Birth & Death Certificate Verification</a></h5>
+                            <p>We help you to verify Certificates in a fast, secure, efficient and reliable way.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-cat text-center mb-50">
+                        <div class="cat-icon">
+                            <span class="flaticon-plane"></span>
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="services.html">Driver & Vehicle Lisence Verification</a></h5>
+                            <p>We help employers, law enforcement agencies, governmental and non-governmental agencies to verify Licenses and road worthy Certificates in a fast, secure, efficient and reliable way.</p>
                         </div>
                     </div>
                 </div>
@@ -133,7 +144,7 @@
                         <!-- Section Tittle -->
                         <div class="section-tittle mb-35">
                             <span>About Our Company</span>
-                            <h2>Safe Logistic & Transport  Solutions That Saves our Valuable Time!</h2>
+                            <h2>Certificate & License Verification Solutions That Saves the Valuable Time, Resources and Energy of our clients!</h2>
                         </div>
                         <p>Brook presents your services with flexible, convenient and cdpose layouts. You can select your favorite layouts & elements for cular ts with unlimited ustomization possibilities. Pixel-perfect replication of the designers is intended.</p>
                         <p>Brook presents your services with flexible, convefnient and chient anipurpose layouts. You can select your favorite layouts.</p>
@@ -167,9 +178,9 @@
                             <div class="col-lg-12">
                                 <!-- Section Tittle -->
                                 <div class="section-tittle mb-50">
-                                    <span>Get a Qote For Free</span>
-                                    <h2>Request a Free Quote</h2>
-                                    <p>Brook presents your services with flexible, convenient and cdpose layouts. You can select your favorite layouts & elements for.</p>
+                                    <span>Make Enquiries For Free</span>
+                                    <h2>Request a Service</h2>
+                                    <p>We offer you our services with flexibility, convenience, timeliness, security and trust. You can contact us for your favorite service & product.</p>
                                 </div>
                             </div>
                         </div>
@@ -194,11 +205,13 @@
                                 <div class="col-lg-6">
                                     <div class="select-items">
                                         <select name="select" id="select1">
-                                            <option value="">Freight Type</option>
-                                            <option value="">Catagories One</option>
-                                            <option value="">Catagories Two</option>
-                                            <option value="">Catagories Three</option>
-                                            <option value="">Catagories Four</option>
+                                            <option value="">Software for Business solutions</option>
+                                            <option value="">Smart Computer laboratories</option>
+                                            <option value="">Education / school management system</option>
+                                            <option value="">Farm management system</option>
+                                            <option value="">Hospital management system</option>
+                                            <option value="">Computer Networking</option>
+                                            <option value="">Computer Hardware and Repairs</option>
                                         </select>
                                     </div>
                                 </div>
@@ -259,7 +272,7 @@
                                 </div>
                                 <!-- Button -->
                                 <div class="col-lg-12">
-                                    <button name="submit" class="submit-btn">Request a Quote</button>
+                                    <button name="submit" class="submit-btn">Request a Service</button>
                                 </div>
                             </div>
                         </form>
@@ -287,8 +300,8 @@
                         <div class="team-img">
                             <img src="{{asset('front/assets/img/gallery/team1.png')}}" alt="">
                             <div class="team-caption">
-                                <h3><a href="#">Mancherwan Kolin</a></h3>
-                                <p>Health agent</p>
+                                <h3><a href="#">Mike-Berg Sitsofe Afu</a></h3>
+                                <p>Technical Director/ Software Engineer</p>
                                 <!-- Blog Social -->
                                 <div class="team-social">
                                     <ul>
@@ -307,8 +320,8 @@
                         <div class="team-img">
                             <img src="{{asset('front/assets/img/gallery/team2.png')}}" alt="">
                             <div class="team-caption">
-                                <h3><a href="#">Mancherwan Kolin</a></h3>
-                                <p>Health agent</p>
+                                <h3><a href="#">Constant Godssway Kwasigah</a></h3>
+                                <p>Systems Administrator / Software Developer</p>
                                 <!-- Blog Social -->
                                 <div class="team-social">
                                     <ul>
@@ -325,7 +338,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-6">
                     <div class="single-team mb-30 text-center">
                         <div class="team-img">
-                            <img src="{{asset('front/assets/img/gallery/team3.png')}}" alt="">
+                            img src="{{asset('front/assets/img/gallery/team3.png')}}" alt="">
                             <div class="team-caption">
                                 <h3><a href="#">Mancherwan Kolin</a></h3>
                                 <p>Health agent</p>
@@ -381,7 +394,7 @@
                             <!-- Testimonial Content -->
                             <div class="testimonial-caption ">
                                 <div class="testimonial-top-cap">
-                                    <p>Srem ipsum adolor dfsit amet, consectetur adipiscing elit, sed dox beiusmod tempor incci didunt ut labore et dolore magna aliqua. Quis cipsucm suspendisse ultrices gravida. Risus commodo vivercra maecenas accumsan lac.</p>
+                                    <p>Certifier, Certifier, Certifier,Certifier, Certifier, Certifier.</p>
                                 </div>
                                 <!-- founder -->
                                 <div class="testimonial-founder d-flex align-items-center">
@@ -402,7 +415,7 @@
                     <div class="testimonial-form text-center">
                         <h3>Always listening, always understanding.</h3>
                         <input type="text" placeholder="Incoterms">
-                        <button name="submit" class="submit-btn">Request a Quote</button>
+                        <button name="submit" class="submit-btn">Request a Service</button>
                     </div>
                 </div>
                 <!-- Form End -->

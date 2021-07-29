@@ -11,11 +11,11 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="hero-cap">
-                                <h2>About us</h2>
+                                <h2>Services</h2>
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="about.php">About</a></li>
+                                        <li class="breadcrumb-item"><a href="#">Services</a></li>
 
                                     </ol>
                                 </nav>

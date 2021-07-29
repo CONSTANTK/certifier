@@ -15,6 +15,9 @@ class WelcomeController extends Controller
         return view('front.pages.about');
     }
 
+public function register(){
+        return view('front.pages.register');
+    }
 
 
 }

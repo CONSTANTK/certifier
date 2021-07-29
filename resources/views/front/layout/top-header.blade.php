@@ -8,8 +8,8 @@
                         <div class="row d-flex justify-content-between align-items-center">
                             <div class="header-info-left">
                                 <ul>
-                                    <li>Phone: +99 (0) 101 0000 888</li>
-                                    <li>Email: noreply@yourdomain.com</li>
+                                    <li>Phone: +233 (0) 246 623 172 / (0) 204 038 261</li>
+                                    <li>Email: info@certifier.com</li>
                                 </ul>
                             </div>
                             <div class="header-info-right">
@@ -40,22 +40,26 @@
                                     <nav>
                                         <ul id="navigation">
                                             <li><a href="{{route('front.welcome')}}">Home</a></li>
-                                            <li><a href="{{route('front.about')}}">About</a></li>
-                                            <li><a href="#">Services</a></li>
-                                            <li><a href="#">Blog</a>
+                                            <li><a href="{{route('front.about')}}">About</a></li> 
+                                                                                       
+                                            <li><a href="#">Services</a>
                                                 <ul class="submenu">
-                                                    <li><a href="#">Blog</a></li>
-                                                    <li><a href="#">Blog Details</a></li>
-                                                    <li><a href="#">Element</a></li>
+                                                    <li><a href="#">Educational Certificate</a></li>
+                                                    <li><a href="#">Business Certificate</a></li>
+                                                    <li><a href="#">Birth Certificate</a></li>
+                                                    <li><a href="#">DVLA Lisence / Certificate</a></li>
                                                 </ul>
-                                            </li>
+                                           </li>
+                                            <li><a class="activ" href="register.php">Register</a></li>
+
                                             <li><a href="{{route('front.contact.us')}}">Contact</a></li>
+                                            <li><a class="activ" href='#'>Login</a></li>
                                         </ul>
                                     </nav>
                                 </div>
                                 <!-- Header-btn -->
                                 <div class="header-right-btn d-none d-lg-block ml-20">
-                                    <a href="contact.html" class="btn header-btn">Get A Qoue</a>
+                                    <a href="register.php" class="btn header-btn">Register</a>
                                 </div>
                             </div>
                         </div>
