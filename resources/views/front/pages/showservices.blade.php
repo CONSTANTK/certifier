@@ -10,8 +10,8 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="hero-cap">
-                            <h2>Certificate Verification</h2>
-                            <nav aria-label="breadcrumb">
+                            <h2>{{$service->title}}</h2>
+                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="{{route('front.welcome')}}">Home</a></li>
                                     <li class="breadcrumb-item"><a href="{{route('front.showservices')}}">Services</a></li>
@@ -23,6 +23,8 @@
             </div>
         </div>
     </div>
+    <p>{{$service->content}}</p>
+                           
     <!-- slider Area End-->
                                   
                                            
@@ -76,43 +78,14 @@
                          <form>
                             <div class="panel panel-default">
                                 <div class="panel panel-header">
-                                    <div class="panel panel-heading" align="center"><h1 style="font-size:15px">  
-                                    Welcome To CERTFIER</h1><br/>
+                                    <div class="panel panel-heading" align="center">
+                                    
                                      
-                                    
-                                       <div class="input-group">
-                                     <span class="input-group-addon">Certtificate type:</span><br>
-                                            <select>
-                                                <option>Select Certificate Type</option><br>
-                                                <option value="">Select certificate type</option>
-                                                <option value=""><a href="{{route('front.educert')}}">Educational Certificate</a></option>
-                                                <option value="">Business Certificate</option>
-                                                <option value="">Birth & Death Certificate</option>
-                                                <option value="">DVLA License / Certificate</option>
-                                                <option value="">Other</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                           
-                                    
-                                    <div class="input-group">
-                                            <span class="input-group-addon" >User ID:</span>
-                                            <input class="form-control" type="varchar" size="20" autofocus/>
-                                    </div><br> 
-                                    <div class="input-group">
-                                            <span class="input-group-addon" >Certificate ID or Holder's ID:</span>
-                                            <input class="form-control" type="varchar" size="20" />
-                                    </div><br>   
-                                    <div class="input-group">
-                                            <span class="input-group-addon" >Issuing date:</span>
-                                            <input class="form-control" type="date" />
-                                    </div><br> 
-                                   
 
-                                   
+                                   <p>Click the button below to register for our service</p>
                                     <div class="header-right-btn d-none d-lg-block ml-20" align="center">
-                                   <button type="submit" class="btn header-btn" style="background-color:green;"> Verify</a></button> 
-                               
+                                   <button type="submit" class="btn header-btn" style="background-color:green;"><a href="{{route('front.register')}}"> Register</a></button>
+                              
                     </div>
                      <div class="col-md-3"> 
                 </form>

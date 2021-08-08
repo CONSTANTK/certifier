@@ -18,9 +18,9 @@ class ServicesController extends Controller
 
 		$pageTitle = 'Our Services';
        
-       return view('front.pages.showservices');
+      // return view('front.pages.showservices');
 		//return $service;
-		//return view('front.pages.show-service', compact( 'pageTitle','service'));
+	return view('front.pages.showservices', compact( 'pageTitle','service'));
 
 	}
 
