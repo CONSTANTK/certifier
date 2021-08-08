@@ -10,11 +10,11 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="hero-cap">
-                            <h2>Register</h2>
+                            <h2>Certificate Verification</h2>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="{{route('front.welcome')}}">Home</a></li>
-                                    <li class="breadcrumb-item"><a href="{{route('front.register')}}">Register</a></li>
+                                    <li class="breadcrumb-item"><a href="{{route('front.showservices')}}">Services</a></li>
                                 </ol>
                             </nav>
                         </div>
@@ -79,55 +79,41 @@
                                     <div class="panel panel-heading" align="center"><h1 style="font-size:15px">  
                                     Welcome To CERTFIER</h1><br/>
                                      
-                                     <div class="input-group">
+                                    
+                                       <div class="input-group">
+                                     <span class="input-group-addon">Certtificate type:</span><br>
+                                            <select>
+                                                <option>Select Certificate Type</option><br>
+                                                <option value="">Select certificate type</option>
+                                                <option value=""><a href="{{route('front.educert')}}">Educational Certificate</a></option>
+                                                <option value="">Business Certificate</option>
+                                                <option value="">Birth & Death Certificate</option>
+                                                <option value="">DVLA License / Certificate</option>
+                                                <option value="">Other</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                           
+                                    
+                                    <div class="input-group">
                                             <span class="input-group-addon" >User ID:</span>
-                                            <input class="form-control" type="varchar" size="20" autoincrement="true"/>
+                                            <input class="form-control" type="varchar" size="20" autofocus/>
+                                    </div><br> 
+                                    <div class="input-group">
+                                            <span class="input-group-addon" >Certificate ID or Holder's ID:</span>
+                                            <input class="form-control" type="varchar" size="20" />
                                     </div><br>   
                                     <div class="input-group">
-                                            <span class="input-group-addon" >First Name:</span>
-                                            <input class="form-control" type="text" size="20" autofocus/>
+                                            <span class="input-group-addon" >Issuing date:</span>
+                                            <input class="form-control" type="date" />
                                     </div><br> 
-                                     <div class="input-group">
-                                            <span class="input-group-addon" >Middle Name:</span>
-                                            <input class="form-control" type="text" size="20" />
-                                    </div><br>  
+                                   
 
-                                    <div class="input-group">
-                                            <span class="input-group-addon" >Last Name:</span>
-                                            <input class="form-control" type="text" size="20" />
-                                    </div><br>
-                                     <div class="input-group">
-                                            <span class="input-group-addon" >Username:</span>
-                                            <input class="form-control" type="text" size="20" autofocus/>
-                                    </div><br> 
-
-                                    <div class="input-group">
-                                            <span class="input-group-addon">Password:</span>
-                                            <input class="form-control" type="password" size="10" />
- 
-                                    </div><br>  
-                                      
-                                    <div class="input-group">
-                                            <span class="input-group-addon">Confirm Password:</span>
-                                            <input class="form-control" type="password" size="10" />
- 
-                                    </div><br> 
+                                   
                                     <div class="header-right-btn d-none d-lg-block ml-20" align="center">
-                                   <button type="submit" class="btn header-btn" style="background-color:green;"> Register</a></button> 
+                                   <button type="submit" class="btn header-btn" style="background-color:green;"> Verify</a></button> 
                                
                     </div>
-                                    <div class="input-group">
-                            
-                     </div><br>
-                   
-                      <div class="panel  panel-header" >
-                          <i>
-                          <div class=" panel panel-heading" style="font-color:red;" font-color="color:red" align="center"><h5 style=" font-size:17px;">Welcome to CERTIFIER<br>Copyright@2017 </h5></div>
-                          </i>
-
-                       </div>
-                     </div><br/>
-                                    
                      <div class="col-md-3"> 
                 </form>
 

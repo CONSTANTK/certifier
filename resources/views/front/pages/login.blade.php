@@ -13,8 +13,8 @@
                             <h2>Login</h2>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                    <li><a class="activ" href='login.php'>Login</a></li>
+                                    <li class="breadcrumb-item"><a href="{{route('front.welcome')}}">Home</a></li>
+                                    <li><a class="activ" href="{{route('front.login')}}">Login</a></li>
                                 </ol>
                             </nav>
                         </div>
@@ -28,7 +28,7 @@
     <section class="contact-section">
         <div class="container">
             <div class="d-none d-sm-block mb-5 pb-4">
-                <div id="map" style="height: 480px; position: relative; overflow: hidden;">
+                <div id="map" style="position: relative; overflow: hidden;">
                     <div style="height: 100%; width: 100%; position: absolute; top: 0px; left: 0px; background-color: rgb(229, 227, 223);">
                         <div class="gm-style"
                              style="position: absolute; z-index: 0; left: 0px; top: 0px; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px;">
@@ -39,7 +39,7 @@
                                         <div style="position: absolute; left: 0px; top: 0px; z-index: 0;">
                                             <div style="position: absolute; z-index: 991; transform: matrix(1, 0, 0, 1, -100, -189);">
                                                 <div style="position: absolute; left: 0px; top: 0px; width: 256px; height: 256px;">
-                                                    <div style="width: 256px; height: 256px;"></div>
+                                                   
                                                 </div>
                                                 <div style="position: absolute; left: -256px; top: 0px; width: 256px; height: 256px;">
                                                     <div style="width: 256px; height: 256px;"></div>
@@ -201,42 +201,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <iframe aria-hidden="true" frameborder="0"
-                                    style="z-index: -1; position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none;"
-                                    src="about:blank"></iframe>
-                            <div style="margin-left: 5px; margin-right: 5px; z-index: 1000000; position: absolute; left: 0px; bottom: 0px;">
-                                <a target="_blank" rel="noopener"
-                                   href="https://maps.google.com/maps?ll=-31.197,150.744&amp;z=9&amp;t=m&amp;hl=en-US&amp;gl=US&amp;mapclient=apiv3"
-                                   title="Open this area in Google Maps (opens a new window)"
-                                   style="position: static; overflow: visible; float: none; display: inline;">
-                                    <div style="width: 66px; height: 26px; cursor: pointer;"><img alt=""
-                                                                                                  src="https://maps.gstatic.com/mapfiles/api-3/images/google_white5.png"
-                                                                                                  draggable="false"
-                                                                                                  style="position: absolute; left: 0px; top: 0px; width: 66px; height: 26px; user-select: none; border: 0px; padding: 0px; margin: 0px;">
-                                    </div>
-                                </a></div>
+                           
                             
-                            <button draggable="false" title="Toggle fullscreen view" aria-label="Toggle fullscreen view"
-                                    type="button" class="gm-control-active gm-fullscreen-control"
-                                    style="background: none rgb(255, 255, 255); border: 0px; margin: 10px; padding: 0px; position: absolute; cursor: pointer; user-select: none; border-radius: 2px; height: 40px; width: 40px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; overflow: hidden; top: 0px; right: 0px;">
-                                <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%20018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23666%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
-                                     style="height: 18px; width: 18px;"><img
-                                        src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23333%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
-                                        style="height: 18px; width: 18px;"><img
-                                        src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2018%2018%22%3E%0A%20%20%3Cpath%20fill%3D%22%23111%22%20d%3D%22M0%2C0v2v4h2V2h4V0H2H0z%20M16%2C0h-4v2h4v4h2V2V0H16z%20M16%2C16h-4v2h4h2v-2v-4h-2V16z%20M2%2C12H0v4v2h2h4v-2H2V12z%22%2F%3E%0A%3C%2Fsvg%3E%0A"
-                                        style="height: 18px; width: 18px;"></button>
-                            <div draggable="false" class="gm-style-cc"
-                                 style="user-select: none; height: 14px; line-height: 14px; position: absolute; right: 0px; bottom: 0px;">
-                                <div style="opacity: 0.7; width: 100%; height: 100%; position: absolute;">
-                                    <div style="width: 1px;"></div>
-                                    <div style="background-color: rgb(245, 245, 245); width: auto; height: 100%; margin-left: 1px;"></div>
-                                </div>
-                                <div style="position: relative; padding-right: 6px; padding-left: 6px; box-sizing: border-box; font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); white-space: nowrap; direction: ltr; text-align: right; vertical-align: middle; display: inline-block;">
-                                    <a target="_blank" rel="noopener"
-                                       title="Report errors in the road map or imagery to Google"
-                                       href="https://www.google.com/maps/@-31.197,150.744,9z/data=!10m1!1e1!12b1?source=apiv3&amp;rapsrc=apiv3"
-                                       style="font-family: Roboto, Arial, sans-serif; font-size: 10px; color: rgb(68, 68, 68); text-decoration: none; position: relative;">Report
-                                        a map error</a></div>
                             </div>
                             <div class="gmnoprint gm-bundled-control gm-bundled-control-on-bottom" draggable="false"
                                  controlwidth="40" controlheight="81"
@@ -293,11 +259,7 @@
                             </div>
                         </div>
                     </div>
-                    <div style="background-color: white; font-weight: 500; font-family: Roboto, sans-serif; padding: 15px 25px; box-sizing: border-box; top: 5px; border: 1px solid rgba(0, 0, 0, 0.12); border-radius: 5px; left: 50%; max-width: 375px; position: absolute; transform: translateX(-50%); width: calc(100% - 10px); z-index: 1;">
-                        <div><img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/google_gray.svg"
-                                  draggable="false"
-                                  style="padding: 0px; margin: 0px; border: 0px; height: 17px; vertical-align: middle; width: 52px; user-select: none;">
-                        </div>
+                    
                       
                 <script>
                     function initMap() {
@@ -339,65 +301,45 @@
             </div>
             <div class="row">
                 <div class="col-12">
-                    <h2 class="login-title">Login</h2>
+                    <h2 class="login-title" >Login</h2>
                 </div>
-                <div class="col-lg-8">
-                    <form class="form-login login_form" action="{{route('front.login.process')}}" method="post"
+                <div class="col-lg-8" >
+                    <form class="form-login login_form" action="{{route('front.login.process')}}" method="post" 
                            novalidate="novalidate">
                         @csrf
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="panel panel-header">
-                    <div class="panel panel-heading" align="center" ><h6 style="font-size:20px">
-                    <b>Welcome To CERTFIER</b></h6>
-                    <i>Please Login Here!!!</i><br><br>
 
+                        <div class="row"  >
+                        <div class="section-tittle mb-50" align="center">
+                                              
+                    <div class="panel panel-heading" ><h6 style="font-size:20px, color:orange;">
+                    <b>Welcome To CERTFIER</b></h6>
+                    <i>
+                    <h5 style="color:green;">Please Login Here!!!</i><br><br></h5>
+                    
+
+                     <div class="form-group" >
                     <div class="input-group">
-                        <span class="input-group-addon" >Username</span>
-                        <input class="form-control" type="text" autofocus/>
+                        <span class="input-group-addon" align="center" >Username</span>
+                        <input class="form-control" type="text" size="30" value="Please enter username" autofocus/>
                         
                     </div><br>  
                     <div class="input-group">
                         <span class="input-group-addon">Password</span>
-                        <input class="form-control" type="password"/>
-                        
+                        <input class="form-control" type="password" size="20" />
+                      </div>  
                     </div><br>  
-                    
-                     <div class="form-group mt-3">
-                            <button type="submit" class="button button-loginForm boxed-btn">Login</button>
-                        </div>
-                     <a href="entry form.html"><img src="login.png" height="60"></a><br/>
-                     <a class="activ" href='{!! url('register'); !!}' style="color:red">Click here to register</a>
+                 
+                   <div class="header-right-btn d-none d-lg-block ml-20" align="center">
+                                   <button type="submit" class="btn header-btn" style="background-color:green;"> Login</a></button> 
+                               
+                    </div>
                       <div class="panel  panel-header" >
-                          <i>
-                          <div class=" panel panel-heading" style="font-color:red;" font-color="color:red" align="center"><h5 style=" font-size:17px;">Welcome to CERTFIER<br>Copyright@2017 </h5></div>
-                          </i>
-                            </div>
-
+                     
                     </form>
-                </div>
-                <div class="col-lg-3 offset-lg-1">
-                    <div class="media contact-info">
-                        <span class="contact-info__icon"><i class="ti-home"></i></span>
-                        <div class="media-body">
-                            <h3>Hatso, Greater Accra.</h3>
-                            <p>Mabay 70, Accra</p>
-                        </div>
-                    </div>
-                    <div class="media contact-info">
-                        <span class="contact-info__icon"><i class="ti-tablet"></i></span>
-                        <div class="media-body">
-                            <h3>+233 246 623 172</h3>
-                            <p>Mon to Fri 9am to 6pm</p>
-                        </div>
-                    </div>
-                    <div class="media contact-info">
-                        <span class="contact-info__icon"><i class="ti-email"></i></span>
-                        <div class="media-body">
-                            <h3>support@certifier.com</h3>
-                            <p>Send us your query anytime!</p>
-                        </div>
-                    </div>
+                <br>
+               
+                    
+                    Copyright@2021
                 </div>
             </div>
         </div>

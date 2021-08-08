@@ -25,10 +25,9 @@
                 </div>
             </div>
             <div class="header-bottom  header-sticky">
-                <div class="container">
-                    <div class="row align-items-center">
+      
                         <!-- Logo -->
-                        <div class="col-xl-2 col-lg-2">
+                        <div class="col-xl-10 col-lg-10">
                             <div class="logo">
                                 <a href="index.html"><img src="{{asset('front/assets/img/logo/logo.png')}}" alt=""></a>
                             </div>
@@ -37,29 +36,32 @@
                             <div class="menu-wrapper  d-flex align-items-center justify-content-end">
                                 <!-- Main-menu -->
                                 <div class="main-menu d-none d-lg-block">
-                                    <nav>
+                                   <nav>
                                         <ul id="navigation">
                                             <li><a href="{{route('front.welcome')}}">Home</a></li>
                                             <li><a href="{{route('front.about')}}">About</a></li> 
                                                                                        
-                                            <li><a href="#">Services</a>
+                                            <li><a href="{{route('front.services')}}">Services</a>
                                                 <ul class="submenu">
-                                                    <li><a href="#">Educational Certificate</a></li>
-                                                    <li><a href="#">Business Certificate</a></li>
-                                                    <li><a href="#">Birth Certificate</a></li>
-                                                    <li><a href="#">DVLA Lisence / Certificate</a></li>
+                                                @foreach(get_services() as $service)
+                                                    <li><a href="{{route('front.services.show',$service->id)}}">
+                                                    {{$service->title}}</a></li>
+                                                @endforeach
                                                 </ul>
                                            </li>
-                                            <li><a class="activ" href="register.php">Register</a></li>
+        
 
                                             <li><a href="{{route('front.contact.us')}}">Contact</a></li>
-                                            <li><a class="activ" href='#'>Login</a></li>
-                                        </ul>
+                                          </ul>
                                     </nav>
+                                </div>
+                                <div class="header-right-btn d-none d-lg-block ml-20 ">
+                                    <a href="{{route('front.login')}}" class="btn header-btn" style="background-color:green;" >Login</a>
                                 </div>
                                 <!-- Header-btn -->
                                 <div class="header-right-btn d-none d-lg-block ml-20">
-                                    <a href="register.php" class="btn header-btn">Register</a>
+                               <a href="{{route('front.register')}}" class="btn header-btn">Register</a>
+                                    
                                 </div>
                             </div>
                         </div>

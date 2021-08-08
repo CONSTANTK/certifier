@@ -25,53 +25,21 @@ Route::post('login/store', [\App\Http\Controllers\Front\LoginController::class,'
 Route::get('register', [\App\Http\Controllers\Front\RegisterController::class,'index'])->name('front.register');
 Route::post('register/store', [\App\Http\Controllers\Front\RegisterController::class,'processRegister'])->name('front.register.process');
 
-Route::get('login', [\App\Http\Controllers\Front\LoginController::class,'index'])->name('front.login');
-Route::post('login', [\App\Http\Controllers\Front\LoginController::class,'processLogin'])->name('front.login.process');
+Route::get('services', [\App\Http\Controllers\Front\ServicesController::class,'index'])->name('front.services');
+Route::get('services/{service}', [\App\Http\Controllers\Front\ServicesController::class,'show'])->name('front.services.show');
+//Route::post('services/store', [\App\Http\Controllers\Front\ServicesController::class,'processServices'])->name('front.services.process');
 
+Route::get('educert', [\App\Http\Controllers\Front\EduCertController::class,'index'])->name('front.educert');
+Route::post('educert/store', [\App\Http\Controllers\Front\EduCertController::class,'processEduCert'])->name('front.educert.process');
 
-Route::get('payment', function () {
-    return view('payment');
-});
+Route::get('certveri', [\App\Http\Controllers\Front\CertVeriController::class,'index'])->name('front.certveri');
+Route::post('certveri/store', [\App\Http\Controllers\Front\CertVeriController::class,'processEduCert'])->name('front.certveri.process');
 
+Route::get('addcert', [\App\Http\Controllers\Front\AddCertController::class,'index'])->name('front.addcert');
+Route::post('addcert/store', [\App\Http\Controllers\Front\AddCertController::class,'processAddCert'])->name('front.addcert.process');
 
-Route::get('register', function () {
-    return view('register');
-});
+Route::get('payment', [\App\Http\Controllers\Front\PaymentController::class,'index'])->name('front.payment');
+Route::post('payment/store', [\App\Http\Controllers\Front\PaymentController::class,'processPayment'])->name('front.payment.process');
 
-Route::get('login', function () {
-    return view('login');
-});
-
-Route::get('index', function () {
-    return view('index');
-});
-
-Route::get('about', function () {
-    return view('about');
-});
-
-Route::get('contact', function () {
-    return view('contact');
-});
-
-Route::get('user_reg', function () {
-    return view('user_reg');
-});
-
-Route::get('services', function () {
-    return view('services');
-});
-	
-
-
-Route::get('ourservices', [\App\Http\Controllers\ourservicesController::class,'ourservices'] );
-
-Route::get('payment', [\App\Http\Controllers\paymentController::class,'payment'] );
-
-Route::get('register', [\App\Http\Controllers\RegisterController::class,'register'] );
-
-Route::get('user/login', [\App\Http\Controllers\LoginController::class,'login'] );
-
-Route::get('services', [\App\Http\Controllers\ServicesController::class,'services'] );
-
-
+Route::get('showservices', [\App\Http\Controllers\Front\ShowServicesController::class,'index'])->name('front.showservices');
+Route::post('showservices/store', [\App\Http\Controllers\Front\ShowServicesController::class,'processShowServices'])->name('front.showservices.process');

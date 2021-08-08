@@ -13,8 +13,8 @@
                             <h2>Register</h2>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="{{route('front.welcome')}}">Home</a></li>
-                                    <li class="breadcrumb-item"><a href="{{route('front.register')}}">Register</a></li>
+                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="#">Register</a></li>
                                 </ol>
                             </nav>
                         </div>
@@ -78,11 +78,7 @@
                                 <div class="panel panel-header">
                                     <div class="panel panel-heading" align="center"><h1 style="font-size:15px">  
                                     Welcome To CERTFIER</h1><br/>
-                                     
-                                     <div class="input-group">
-                                            <span class="input-group-addon" >User ID:</span>
-                                            <input class="form-control" type="varchar" size="20" autoincrement="true"/>
-                                    </div><br>   
+                                        
                                     <div class="input-group">
                                             <span class="input-group-addon" >First Name:</span>
                                             <input class="form-control" type="text" size="20" autofocus/>
@@ -91,11 +87,6 @@
                                             <span class="input-group-addon" >Middle Name:</span>
                                             <input class="form-control" type="text" size="20" />
                                     </div><br>  
-
-                                    <div class="input-group">
-                                            <span class="input-group-addon" >Last Name:</span>
-                                            <input class="form-control" type="text" size="20" />
-                                    </div><br>
                                      <div class="input-group">
                                             <span class="input-group-addon" >Username:</span>
                                             <input class="form-control" type="text" size="20" autofocus/>
@@ -122,7 +113,7 @@
                    
                       <div class="panel  panel-header" >
                           <i>
-                          <div class=" panel panel-heading" style="font-color:red;" font-color="color:red" align="center"><h5 style=" font-size:17px;">Welcome to CERTIFIER<br>Copyright@2017 </h5></div>
+                          <div class=" panel panel-heading" style="font-color:red;" font-color="color:red" align="center"><h5 style=" font-size:17px;">Welcome to CERTFIER<br>Copyright@2017 </h5></div>
                           </i>
 
                        </div>

@@ -19,5 +19,12 @@ public function register(){
         return view('front.pages.register');
     }
 
+public function services(){
+        return view('front.pages.services');
+    }
+
+    public function showservice(){
+        return view('front.pages.showservice');
+    }
 
 }

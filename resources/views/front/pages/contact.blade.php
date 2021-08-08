@@ -13,8 +13,8 @@
                             <h2>Contact Us</h2>
                             <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                    <li class="breadcrumb-item"><a href="contact.php">Contact</a></li>
+                                    <li class="breadcrumb-item"><a href="{{route('front.welcome')}}">Home</a></li>
+                                    <li class="breadcrumb-item"><a href="{{route('front.contact.us')}}">Contact</a></li>
                                 </ol>
                             </nav>
                         </div>
@@ -124,9 +124,12 @@
                             </div>
                         </div>
                         <div class="form-group mt-3">
-                            <button type="submit" class="button button-contactForm boxed-btn">Send</button>
+                            <button type="submit"   class="button button-contactForm boxed-btn" style="background-color:green" color="white">Send</button>
                         </div>
-                    </form>
+
+                        
+
+                  </form>
                 </div>
                 <div class="col-lg-3 offset-lg-1">
                     <div class="media contact-info">
