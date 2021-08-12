@@ -299,8 +299,19 @@
                 </script>
 
             </div>
+            <div class="container">
+            <div class="row" style="  margin:20px;">
+                <div class="col-md-3">
+                </div>
+                      <div class="col-md-6">  
+
+                         <form>
+                            <div class="panel panel-default">
+                                <div class="panel panel-header">
+                                    <div class="panel panel-heading" align="center"><h1 style="font-size:15px">  
+                                    Welcome To CERTIFIER</h1><br/>
             <div class="row">
-                <div class="col-12">
+                <div class="col-3">
                     <h2 class="login-title" >Login</h2>
                 </div>
                 <div class="col-lg-8" >
@@ -311,13 +322,11 @@
                         <div class="row"  >
                         <div class="section-tittle mb-50" align="center">
                                               
-                    <div class="panel panel-heading" ><h6 style="font-size:20px, color:orange;">
-                    <b>Welcome To CERTFIER</b></h6>
-                    <i>
+                    
                     <h5 style="color:green;">Please Login Here!!!</i><br><br></h5>
                     
 
-                     <div class="form-group" >
+                    
                     <div class="input-group">
                         <span class="input-group-addon" align="center" >Username</span>
                         <input class="form-control" type="text" size="30" value="Please enter username" autofocus/>
@@ -330,16 +339,16 @@
                     </div><br>  
                  
                    <div class="header-right-btn d-none d-lg-block ml-20" align="center">
-                                   <button type="submit" class="btn header-btn" style="background-color:green;"> Login</a></button> 
+                                   <button type="submit" class="btn header-btn" style="background-color:green;"><a href="{{route('front.dashboard')}}"> Login</a></button> 
                                
-                    </div>
+                    </div><br>
+
                       <div class="panel  panel-header" >
-                     
+
+                      
                     </form>
                 <br>
-               
-                    
-                    Copyright@2021
+            
                 </div>
             </div>
         </div>

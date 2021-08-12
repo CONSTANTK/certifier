@@ -27,4 +27,9 @@ public function services(){
         return view('front.pages.showservice');
     }
 
+    public function certveri(){
+        return view('front.pages.certveri');
+    }
+
+
 }

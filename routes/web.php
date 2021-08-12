@@ -43,3 +43,6 @@ Route::post('payment/store', [\App\Http\Controllers\Front\PaymentController::cla
 
 Route::get('showservices', [\App\Http\Controllers\Front\ShowServicesController::class,'index'])->name('front.showservices');
 Route::post('showservices/store', [\App\Http\Controllers\Front\ShowServicesController::class,'processShowServices'])->name('front.showservices.process');
+
+Route::get('dashboard', [\App\Http\Controllers\Front\DashboardController::class,'index'])->name('front.dashboard');
+Route::post('dashboard/store', [\App\Http\Controllers\Front\DashboardController::class,'processShowDashboard'])->name('front.dashboard.process');

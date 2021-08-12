@@ -10,11 +10,11 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="hero-cap">
-                            <h2>{{$service->title}}</h2>
-                             <nav aria-label="breadcrumb">
+                            <h2>Dashboard</h2>
+                            <nav aria-label="breadcrumb">
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="{{route('front.welcome')}}">Home</a></li>
-                                    <li class="breadcrumb-item"><a href="{{route('front.showservices')}}">Services</a></li>
+                                    <li class="breadcrumb-item"><a href="{{route('front.dashboard')}}">Dashboard</a></li>
                                 </ol>
                             </nav>
                         </div>
@@ -23,8 +23,6 @@
             </div>
         </div>
     </div>
-    <p>{{$service->content}}</p>
-                           
     <!-- slider Area End-->
                                   
                                            
@@ -65,7 +63,7 @@
                 </script>
                 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&amp;callback=initMap">
                 </script>
-                
+
             </div>
             
        @csrf
@@ -78,15 +76,29 @@
                          <form>
                             <div class="panel panel-default">
                                 <div class="panel panel-header">
-                                    <div class="panel panel-heading" align="center">
-                                    
+                                    <div class="panel panel-heading" align="center"><h1 style="font-size:15px">  
+                                    Welcome To CERTFIER</h1><br/>
                                      
-
-                                   <p>Click the button below to register for our service</p>
+                
+                                    <div class="input-group">
+                                    
                                     <div class="header-right-btn d-none d-lg-block ml-20" align="center">
-                                   <button type="submit" class="btn header-btn" style="background-color:green;"><a href="{{route('front.register')}}"> Register</a></button>
-                              
+                                   <button type="submit" class="btn header-btn" style="background-color:green;"><a href="{{route('front.addcert')}}"> Add Certificate</a></button> 
+                               
+                    </div><br><br><br>
+                     <div class="panel panel-default">
+                                <div class="panel panel-header">
+                                    <div class="input-group">
+                                        <div class="header-right-btn d-none d-lg-block ml-20" align="center">
+                                   <button type="submit" class="btn header-btn" style="background-color:green;"><a href="{{route('front.certveri')}}"> Verify Certificate</a></button> 
+                               
                     </div>
+                    </div>
+                    </div>
+                            
+                     </div><br>
+                   
+                                            
                      <div class="col-md-3"> 
                 </form>
 

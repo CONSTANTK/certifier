@@ -37,4 +37,5 @@ class ShowServicesController extends Controller
 	return view('front.pages.showservices', compact( 'content','service'));
 
 	}
+
 }

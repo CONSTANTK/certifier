@@ -11,11 +11,11 @@
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="hero-cap">
-                                <h2>About us</h2>
+                                <h2>Certificate Verification</h2>
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="front.about.php">About</a></li>
+                                        <li class="breadcrumb-item"><a href="front.pages.welcome">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="front.pages.certveri">Certificate Verification</a></li>
 
                                     </ol>
                                 </nav>
@@ -26,75 +26,50 @@
             </div>
         </div>
      
-        <!--? contact-form start -->
-        <section class="contact-form-area section-bg  pt-115 pb-120 fix" data-background="{{asset('front/assets/img/gallery/section_bg02.jpg')}}">
-            <div class="container">
-                <div class="row justify-content-end">
-                    <!-- Contact wrapper -->
-                    <div class="col-xl-8 col-lg-9">
-                        <div class="contact-form-wrapper">
-                            <!-- From tittle -->
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <!-- Section Tittle -->
-                                    <div class="section-tittle mb-50">
-                                        <span>Make a Request For Free</span>
-                                        <h2>Request a Free Service</h2>
-                                        <p>Brook presents your services with flexible, convenient and cdpose layouts. You can select your favorite layouts & elements for.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- form -->
-                            <form action="#" class="contact-form">
-                                <div class="row ">
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="input-form">
-                                            <input type="text" placeholder="Name">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6">
-                                        <div class="input-form">
-                                            <input type="text" placeholder="Email">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="input-form">
-                                            <input type="text" placeholder="Contact Number">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="select-items">
-                                            <select name="select" id="select1">
-                                                <option value="">Educational Certificate</option>
-                                                <option value="">Business Certificate</option>
-                                                <option value="">Birth & Death Certificate</option>
-                                                <option value="">DVLA License / Certificate</option>
-                                                <option value="">Other</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                 
-                                    <!-- Radio Button -->
-                                   
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- contact-form end -->
+       
         <!--Team Ara Start -->
-        
-                
+        <form>
+                <div class="panel panel-default">
+                                <div class="panel panel-header">
+                                    <div class="panel panel-heading" align="center"><h1 style="font-size:15px">  
+                                    Welcome To CERTIFIER</h1><br/>
                     <div class="col-lg-4 col-md-4 col-sm-6">
                         <div class="single-team mb-30 text-center">
-                            <div class="team-img">
-                                <img src="{{asset('front/assets/img/gallery/team2.png')}}" alt="">
-                                <div class="team-caption">
-                                    <h3><a href="#">Mike-Berg Sitsofe Afu</a></h3>
-                                    <p>Chief Software Engineer / Technical Advisor</p>
-                                    <!-- Blog Social -->
+                     
+                      <div class="input-group">
+                                            <span class="input-group-addon" >User ID:</span>
+                                            <input class="form-control" type="varchar" size="20" autofocus autoincrement="true"/>
+                                    </div><br>   
+                                    <div class="input-group">
+                                            <span class="input-group-addon" >Certificate Number:</span>
+                                            <input class="form-control" type="text" size="20"/>
+                                    </div><br> 
+                                    <div class="input-group">
+                        <span class="input-group-addon">Certificate Type</span>
+                         <select>
+                             <option>Select Certificate Type</option>
+                             <option>Educational</option>
+                            <option>Business</option>
+                            <option>Birth and Death</option>
+                            <option>DVLA</option>
+                            
+                    </div>
+                     </select>
+                    </div><br> 
+
+                                    <div class="input-group">
+                                            <span class="input-group-addon" >Date Issued:</span>
+                                            <input class="form-control" type="date" />
+                                    </div><br>
+                                    
+                                    <div class="header-right-btn d-none d-lg-block ml-20" align="center">
+                                   <button type="submit" class="btn header-btn" style="background-color:green;"> Verify</a></button> 
+                               
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </form>
                                     <div class="team-social">
                                         <ul>
                                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
