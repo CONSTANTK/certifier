@@ -31,5 +31,7 @@ public function services(){
         return view('front.pages.certveri');
     }
 
-
+public function backend(){
+        return view('backend.pages.dashboard');
+    }
 }

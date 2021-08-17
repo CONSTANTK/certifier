@@ -46,3 +46,16 @@ Route::post('showservices/store', [\App\Http\Controllers\Front\ShowServicesContr
 
 Route::get('dashboard', [\App\Http\Controllers\Front\DashboardController::class,'index'])->name('front.dashboard');
 Route::post('dashboard/store', [\App\Http\Controllers\Front\DashboardController::class,'processShowDashboard'])->name('front.dashboard.process');
+
+Route::get('register2', [\App\Http\Controllers\Front\Register2Controller::class,'index'])->name('front.register2');
+Route::post('register2/store', [\App\Http\Controllers\Front\Register2Controller::class,'processRegister2'])->name('front.register2.process');
+
+Route::get('register3', [\App\Http\Controllers\Front\Register3Controller::class,'index'])->name('front.register3');
+Route::post('register3/store', [\App\Http\Controllers\Front\Register3Controller::class,'processRegister3'])->name('front.register3.process');
+//Route::prefix('backend')->group(function(){
+//	dashboard, [\App\Http\Controllers\Backend\DashboardController::class,('backend.dashboard');
+//});
+Route::prefix('backend')->group(function () {
+    Route::get('/dashboard', [\App\Http\Controllers\Admin\BackendController::class,'index'])->name('backend.dashboard');
+        // Matches The "/admin/users" URL
+    });
