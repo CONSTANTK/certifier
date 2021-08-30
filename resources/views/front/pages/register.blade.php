@@ -188,13 +188,20 @@ for (i = 0; i < y.length; i++) { if (y[i].value=="" ) { y[i].className +=" inval
                 </div>
                 <div class="thanks-message text-center" id="text-message"> <img src="ok.jpg" width="100" class="mb-4">
                     <h3>Thanks for signing up! <br>Your information has been saved!<br> We will contact you shortly!</h3> 
-                </div>
+                     <div class="form-group mt-3">
+                            
+                        </div>   
                
+                <button type="submit"   class="button button-contactForm boxed-btn" style="background-color:green" color="white">Continue</button>
+              
+                </div>
+                 
                 <div style="overflow:auto;" id="nextprevious">
                     <div style="float:right;"> <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button> <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button> </div>
-                </div>
+                </div><br>
 
             </form>
+
             <div class="d-flex justify-content-center text-center mt-4 pt-1">
                 <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
                 <a href="#!" class="text-white"><i class="fab fa-twitter fa-lg mx-4 px-2"></i></a>

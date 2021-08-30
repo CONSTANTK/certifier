@@ -3,7 +3,7 @@
 
 @section('content')
     <!--? slider Area Start-->
-    <
+    
     <!-- slider Area End-->
     
                                 <div class="gmnoprint" controlwidth="40" controlheight="20"
@@ -43,7 +43,7 @@
 
             <div class="mb-md-5 mt-md-4 pb-5">
 
-              <h2 class="fw-bold mb-2 text-uppercase" style="color:white"><a href="{{route('front.dashboard')}}">Login</a></h2>
+              <h2 class="fw-bold mb-2 text-uppercase" style="color:white"><a href="{{route('front.login')}}">Login</a></h2>
               <p class="text-white-50 mb-5" style="color:green">Please enter your username and password!</p>
 
               <div class="form-outline form-white mb-4">

@@ -55,7 +55,7 @@ Route::post('register3/store', [\App\Http\Controllers\Front\Register3Controller:
 //Route::prefix('backend')->group(function(){
 //	dashboard, [\App\Http\Controllers\Backend\DashboardController::class,('backend.dashboard');
 //});
-Route::prefix('backend')->group(function () {
-    Route::get('/dashboard', [\App\Http\Controllers\Admin\BackendController::class,'index'])->name('backend.dashboard');
-        // Matches The "/admin/users" URL
-    });
+
+Route::get('dashboard', [\App\Http\Controllers\Admin\DashboardController::class,'index'])->name('admin.admin-dash-layout');
+Route::post('dashboard/store', [\App\Http\Controllers\Admin\DashboardController::class,'processDashboard'])->name('admin.admin-dash-layout.process');
+

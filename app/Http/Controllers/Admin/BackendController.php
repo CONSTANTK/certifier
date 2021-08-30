@@ -8,8 +8,14 @@ use App\Models\Backend;
 
 class BackendController extends Controller
 {
-	public function index(){
-		return view('backend.pages.dashboard');
-	}
+	 public function __construct()
+    {
+
+    }
+
+     public function myHome()
+    {
+        return view('myHome');
+    }
     //
 }
