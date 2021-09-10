@@ -186,13 +186,14 @@ for (i = 0; i < y.length; i++) { if (y[i].value=="" ) { y[i].className +=" inval
                     <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
                     <p><input placeholder="Confirm Password..." oninput="this.className = ''" name="pword" type="password"></p>
                 </div>
+                 
                 <div class="thanks-message text-center" id="text-message"> <img src="ok.jpg" width="100" class="mb-4">
                     <h3>Thanks for signing up! <br>Your information has been saved!<br> We will contact you shortly!</h3> 
                      <div class="form-group mt-3">
                             
                         </div>   
                
-                <button type="submit"   class="button button-contactForm boxed-btn" style="background-color:green" color="white">Continue</button>
+                <a href="{{route('front.profile')}}"><button type="submit"   class="button button-contactForm boxed-btn" style="background-color:green" color="white">Continue</a></button>
               
                 </div>
                  
@@ -208,7 +209,10 @@ for (i = 0; i < y.length; i++) { if (y[i].value=="" ) { y[i].className +=" inval
                 <a href="#!" class="text-white"><i class="fab fa-google fa-lg"></i></a>
               </div>
               </div>
+              <p class="mb-0" style="color:white">Have an account already? <a href="{{route('front.login')}}" class="text-white-50 fw-bold">Login Here</a></p>
+            </div>
               </div>
+
         </div>
     </div>
 </div>

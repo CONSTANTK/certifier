@@ -34,4 +34,7 @@ public function services(){
 public function backend(){
         return view('backend.pages.dashboard');
     }
+    public function profile(){
+        return view('front.pages.profile');
+    }
 }

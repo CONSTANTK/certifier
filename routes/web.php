@@ -50,12 +50,15 @@ Route::post('dashboard/store', [\App\Http\Controllers\Front\DashboardController:
 Route::get('register2', [\App\Http\Controllers\Front\Register2Controller::class,'index'])->name('front.register2');
 Route::post('register2/store', [\App\Http\Controllers\Front\Register2Controller::class,'processRegister2'])->name('front.register2.process');
 
-Route::get('register3', [\App\Http\Controllers\Front\Register3Controller::class,'index'])->name('front.register3');
-Route::post('register3/store', [\App\Http\Controllers\Front\Register3Controller::class,'processRegister3'])->name('front.register3.process');
+Route::get('prifile', [\App\Http\Controllers\Front\ProfileController::class,'index'])->name('front.profile');
+//Route::post('register3/store', [\App\Http\Controllers\Front\Register3Controller::class,'processRegister3'])->name('front.register3.process');
 //Route::prefix('backend')->group(function(){
 //	dashboard, [\App\Http\Controllers\Backend\DashboardController::class,('backend.dashboard');
 //});
 
 Route::get('dashboard', [\App\Http\Controllers\Admin\DashboardController::class,'index'])->name('admin.admin-dash-layout');
 Route::post('dashboard/store', [\App\Http\Controllers\Admin\DashboardController::class,'processDashboard'])->name('admin.admin-dash-layout.process');
+
+Route::get('profile', [\App\Http\Controllers\Admin\ProfileController::class,'index'])->name('admin.pages.profile');
+//Route::post('login/store', [\App\Http\Controllers\Admin\LoginController::class,'processLogin'])->name('admin.login.process');
 

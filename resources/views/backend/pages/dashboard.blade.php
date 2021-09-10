@@ -1,4 +1,4 @@
-@extends('backend.pages.dashboard')
+@extends('admin.pages.dashboard')
 
 
 

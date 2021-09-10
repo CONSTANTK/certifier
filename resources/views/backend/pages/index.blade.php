@@ -612,7 +612,7 @@
                   <li class="nav-item">
                     <a href="pages/examples/login.html" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p>Login v1</p>
+                      <p><a href="{{route('admin.pages.login')}}">Login v1</a></p>
                     </a>
                   </li>
                   <li class="nav-item">
