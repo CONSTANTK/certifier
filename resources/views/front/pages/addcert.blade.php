@@ -185,7 +185,7 @@ for (i = 0; i < y.length; i++) { if (y[i].value=="" ) { y[i].className +=" inval
 
                    
                    <p>Upload Certificate: <input type="File" name="Picture" id="image" /></p><br/><br/>
-                    <input type="submit" value="Upload Image" name="submit">
+                    
                     
                 </div>
                  

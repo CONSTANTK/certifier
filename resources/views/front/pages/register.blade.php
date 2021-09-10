@@ -158,48 +158,58 @@ for (i = 0; i < y.length; i++) { if (y[i].value=="" ) { y[i].className +=" inval
 
 <div class="card-body p-5 text-center">
 
-            <div class="mb-md-5 mt-md-4 pb-5">
+             <div class="mb-md-5 mt-md-4 pb-5">
             <form id="regForm">
                 <h1 id="register" style="color:black">Sign Up</h1>
                 <div class="all-steps" id="all-steps"> <span class="step"></span> <span class="step"></span> <span class="step"></span> <span class="step"></span> </div>
                 <div class="tab">
-                    <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
-                    <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
-                     <p><input placeholder="Other names..." oninput="this.className = ''" name="oname"></p>
-                     <p><input placeholder="Date of Birth..." type="date"  oninput="this.className = ''" name="bdate"></p>
+                    <p>First name<input placeholder="Enter First name..." oninput="this.className = ''" name="fname"></p>
+                    <p>Last name<input placeholder="Enter Last name..." oninput="this.className = ''" name="lname"></p>
+                    <p>Other names<input placeholder="Enter Other names..." oninput="this.className = ''" name="oname" required="False"></p>
+                    <p>Date of Birth<input placeholder="Date of birth..." type="date"  oninput="this.className = ''" name="bdate"></p>
+                     
 
                 </div>
                 <div class="tab">
-                    <p><input placeholder="Institution ID" oninput="this.className = ''" name="instid"></p>
-                    <p><input placeholder="Institution Name" oninput="this.className = ''" name="instname"></p>
-                    <p><input placeholder="City" oninput="this.className = ''" name="city"></p>
-                    <p><input placeholder="State / Region" oninput="this.className = ''" name="state"></p>
-                    <p><input placeholder="Country" oninput="this.className = ''" name="country"></p>
-                </div>
-                <div class="tab">
-                    <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
-                    <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
-                </div>
-                <div class="tab">
+                    <p>E-Mail<input placeholder="E-Mail..." oninput="this.className = ''" name="email"></p>
+                    <p>Phone<input placeholder="Phone number..." oninput="this.className = ''" name="phone"></p>
+                 
 
-                    <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
-                    <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
-                    <p><input placeholder="Confirm Password..." oninput="this.className = ''" name="pword" type="password"></p>
+                </div>
+                <div class="tab">
+                    <p>User Name<input placeholder="User name..." oninput="this.className = ''" name="uname"></p>
+                    <p>Password<input placeholder="Enter Password..." oninput="this.className = ''" name="password"></p>
+                    <p>Confirm Password<input placeholder="Re-enter password..." oninput="this.className = ''" name="password" required="False"></p>
+                                        
+
+                </div>
+               
+                <div class="tab">
+                    <p>Institution ID<input placeholder="Institution ID" oninput="this.className = ''" name="inst-id"></p>
+                    <p>Institution Name<input placeholder="Institution Name..." oninput="this.className = ''" name="inst-name"></p>
+                    <p>City<input placeholder="City..." oninput="this.className = ''" name="city"></p>
+                    <p>Region<input placeholder="Region / Province..." oninput="this.className = ''" name="region"></p>
+                    <p>Country<input placeholder="Country..." oninput="this.className = ''" name="country"></p>
                 </div>
                  
                 <div class="thanks-message text-center" id="text-message"> <img src="ok.jpg" width="100" class="mb-4">
-                    <h3>Thanks for signing up! <br>Your information has been saved!<br> We will contact you shortly!</h3> 
+                    <h3>Bravo! <br>Your Certificate has been successfully saved!!<br> Thank you for using CERTIFIER!!!</h3> 
                      <div class="form-group mt-3">
                             
                         </div>   
                
-                <a href="{{route('front.profile')}}"><button type="submit"   class="button button-contactForm boxed-btn" style="background-color:green" color="white">Continue</a></button>
+                <a href="{{route('front.profile')}}"><button type="submit"   class="button button-contactForm boxed-btn" style="background-color:green" color="white">Continue</a></button><br/>
+                
+              
+              
               
                 </div>
+
                  
                 <div style="overflow:auto;" id="nextprevious">
                     <div style="float:right;"> <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button> <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button> </div>
-                </div><br>
+               
+                </div>
 
             </form>
 

@@ -178,6 +178,7 @@ body{
                   <div class="card h-100">
                     <div class="card-body">
                       <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2"><a href="{{route('front.addcert')}}">Add Certificate</a></i></h6>
+                      <button class="btn btn-outline-light btn-lg px-5" type="submit"><a href="{{route('front.addcert')}}">Add Certificate</a></button>
                       </div>
                     </div>
                   </div>
@@ -187,6 +188,7 @@ body{
                   <div class="card h-100">
                     <div class="card-body">
                       <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2"><a href="{{route('front.certveri')}}">Verify Certificate</a></i></h6>
+                     <button class="btn btn-outline-light btn-lg px-5" type="submit"><a href="{{route('front.certveri')}}"> Verify Certificate</a></button>
                       </div>
                     </div>
                   </div>
