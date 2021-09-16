@@ -8,8 +8,6 @@
   <meta https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js>
   <meta https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css>
   <meta https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js>
-
-
 </header>
     <style type="text/css">
 
@@ -163,26 +161,26 @@ for (i = 0; i < y.length; i++) { if (y[i].value=="" ) { y[i].className +=" inval
                 <h1 id="register" style="color:black">Verify Certificate</h1>
                 <div class="all-steps" id="all-steps"> <span class="step"></span> <span class="step"></span> <span class="step"></span> <span class="step"></span> </div>
                 <div class="tab">
-                    <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
-                    <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
-                     <p><input placeholder="Other names..." oninput="this.className = ''" name="oname"></p>
-                     <p><input placeholder="Date of Birth..." type="date"  oninput="this.className = ''" name="bdate"></p>
+                    <p>First Name<input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
+                    <p>Last Name<input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
+                     <p>Other Names<input placeholder="Other names..." oninput="this.className = ''" name="oname"></p>
+                     <p>Date of Birth<input placeholder="Date of Birth..." type="date"  oninput="this.className = ''" name="bdate"></p>
 
                 </div>
                 <div class="tab">
-                    <p>Student ID <input placeholder="Student ID" oninput="this.className = ''" name="stud_id"></p>
+                    <p>Student ID / Index Number <input placeholder="Student ID" oninput="this.className = ''" name="stud_id"></p>
                     <p>Certificate Number<input placeholder="Certificate Number" oninput="this.className = ''" name="certnum"></p>
                         
                 </div>
                            
                 <div class="thanks-message text-center" id="text-message"> <img src="ok.jpg" width="100" class="mb-4">
-                    <h3>Thanks for using Certifier! <br>We hope to see you again!!</h3> 
+                    <h3>Success!<br>Thanks for using Certifier!! <br>We hope to see you again!!!</h3> 
                      <div class="form-group mt-3">
                             
                         </div>   
                
                 <a href="{{route('front.addcert')}}"><button type="submit"   class="button button-contactForm boxed-btn" style="background-color:green" color="white">Verify Another Certificate</a></button>
-               <p>OR</p>
+               <p><h2><b>OR</b><h2></h2></p>
                <a href="{{route('front.addcert')}}"><button type="submit"   class="button button-contactForm boxed-btn" style="background-color:green" color="white">Add a Certificate</a></button>
               
                 </div>
@@ -200,7 +198,9 @@ for (i = 0; i < y.length; i++) { if (y[i].value=="" ) { y[i].className +=" inval
                 <a href="#!" class="text-white"><i class="fab fa-google fa-lg"></i></a>
               </div>
               </div>
-              <p class="mb-5" style="color:white">Have an account already? <a href="{{route('front.login')}}" class="text-white-50 fw-bold">Login Here</a></p>
+               <div align="center">
+              <p><a href="{{route('front.profile')}}">Back to Profile</a></p> <h4 style="color:white">OR</h4> <p style="color:red"><a href="{{route('front.addcert')}}">Add Certificate</a></p>
+              </div>
             </div>
               </div>
 

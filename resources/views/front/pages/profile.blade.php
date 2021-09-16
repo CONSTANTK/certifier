@@ -1,12 +1,142 @@
-@extends('front.layout.app')
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css>
+  <meta https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js>
+  <meta https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css>
+  <meta https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js>
+ <title>Certifier</title>
+  @include('front.common.meta')
+<style>
 
 
-@section('content')
+li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+nav{
+  width: 100vw;
+}
 
 
-<style type="text/css">
-  
+ul{
+  margin: 0;
+  padding: 0;
+}
+
 body{
+  margin: 0;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  
+  /*this option by default dispose the elements in a row (flex-direction: row)*/
+  display: flex;
+}
+
+li{
+  list-style-type: none;  
+  
+  /*when I specify 2 values to margin, the first one is for the top and bottom side, the second for the left and right side*/
+  margin: 0 2vw;
+}
+
+li{
+  list-style-type: none;  
+  margin: 0 2vw;
+  /* our font-size will be 3% of the height of the viewport */
+  font-size: 3vh;
+}
+
+a{
+  text-decoration: none;
+  
+  /*below I changed the color*/
+  color: black;
+  /*I added some padding*/
+  padding: 2vw;
+  /*also changed the font family but that's totally irrelevant*/
+  font-family: monospace;
+}
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: white;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: white;
+  foreground-color:Black;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+</style>
+<style type="text/css">
+  body{
     margin-top:20px;
     color: #1a202c;
     text-align: left;
@@ -59,10 +189,65 @@ body{
 .shadow-none {
     box-shadow: none!important;
 }
-  
 </style>
+<script type="text/javascript">
+    $("document").ready(function(){
+  $("button").click(function(){
+      if($("button").text() == "☰"){
+  $("button").text("✖");
+}else{        
+  $("button").text("☰");      
+}
+  });
+});
 
+    $("li").toggle("slow");
+    </script>
+
+</head>
+<body>
+@include('front.layout.loader')
+<!-- Preloader Start -->
+
+<main>
+
+  @yield('content')
+</main>
+
+<!-- Scroll Up -->
+<div id="back-top" >
+    <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+</div>
+
+@include('front.common.scripts')
+
+@include('front.partials.sweetalert-info-display')
+ <div class="slider-area ">
+<div class="single-slider hero-overly slider-height2 d-flex align-items-center" data-background="{{asset('front/assets/img/hero/about.jpg')}}">
 <div class="container">
+      <div class="row">
+          <div class="col-xl-12">
+            <div class="hero-cap">
+           
+<nav>
+        
+        <ul>
+             
+            <li class="breadcrumb-item" > <a href="{{route('front.addcert')}}"><h5 style="color:red"> ADD CERTIFICATE</h5></a>
+            </li>
+           
+            <li class="breadcrumb-item" ><a href="{{route('front.certveri')}}"><h5 style="color:red"> VERIFY CERTIFICATE</h5></a>
+            </li>
+            
+        </ul>
+    </nav>
+
+
+
+         
+          <!-- /Breadcrumb -->
+    
+          <div class="container">
     <div class="main-body">
     
           <!-- Breadcrumb -->
@@ -82,15 +267,16 @@ body{
                   <div class="d-flex flex-column align-items-center text-center">
                     <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle" width="150">
                     <div class="mt-3">
-                      <h4>Mike-Berg Sitsofe Afu</h4>
-                      <p class="text-secondary mb-1">Full Stack Developer</p>
+                      <h4>MIKE-BERG SITSOFE AFU</h4>
+                      <p class="text-secondary mb-1">Software Engineer</p>
                       <p class="text-muted font-size-sm">Accra, Ghana</p>
-                      <button class="btn btn-primary">Follow</button>
-                      <button class="btn btn-outline-primary"><a href="{{route('front.contact.us')}}"> Message</a></button>
+                    
+                      <button style="background-colore:green" class="btn btn-outline-primary" ><a href="{{route('front.contact.us')}}">SEND Message</a></button>
+                    
                     </div>
                   </div>
                 </div>
-              </div>
+              </div>    
               <div class="card mt-3">
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
@@ -124,7 +310,7 @@ body{
                       <h6 class="mb-0">Full Name</h6>
                     </div>
                     <div class="col-sm-9 text-secondary">
-                     Mike-Berg Sitsofe Afu
+                      Mike-Berg Sitsofe Afu
                     </div>
                   </div>
                   <hr>
@@ -133,7 +319,7 @@ body{
                       <h6 class="mb-0">Email</h6>
                     </div>
                     <div class="col-sm-9 text-secondary">
-                      mike-bergsitsofeafu@certifier.com
+                      berg@certifier.com
                     </div>
                   </div>
                   <hr>
@@ -142,7 +328,7 @@ body{
                       <h6 class="mb-0">Phone</h6>
                     </div>
                     <div class="col-sm-9 text-secondary">
-                      (024) 610-2372
+                      (246) 102-372
                     </div>
                   </div>
                   <hr>
@@ -151,7 +337,7 @@ body{
                       <h6 class="mb-0">Mobile</h6>
                     </div>
                     <div class="col-sm-9 text-secondary">
-                      (024) 662-3172
+                      (246) 623-172
                     </div>
                   </div>
                   <hr>
@@ -166,37 +352,19 @@ body{
                   <hr>
                   <div class="row">
                     <div class="col-sm-12">
-                      
-                      <button class="btn btn-outline-light btn-lg px-5" type="submit"><a href="{{route('front.register')}}"> Edit</a></button>
+                      <button class="btn btn-info " target="__blank"><a href="{{route('front.editprofile')}}">Edit</a></button>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="row gutters-sm">
-                <div class="col-sm-6 mb-3">
-                  <div class="card h-100">
-                    <div class="card-body">
-                      <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2"><a href="{{route('front.addcert')}}">Add Certificate</a></i></h6>
-                      <button class="btn btn-outline-light btn-lg px-5" type="submit"><a href="{{route('front.addcert')}}">Add Certificate</a></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row gutters-sm">
-                <div class="col-sm-6 mb-3">
-                  <div class="card h-100">
-                    <div class="card-body">
-                      <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2"><a href="{{route('front.certveri')}}">Verify Certificate</a></i></h6>
-                     <button class="btn btn-outline-light btn-lg px-5" type="submit"><a href="{{route('front.certveri')}}"> Verify Certificate</a></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              
+  
             </div>
           </div>
 
         </div>
     </div>
-
-@stop
+      
+</body>
+</html>

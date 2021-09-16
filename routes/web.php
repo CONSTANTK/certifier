@@ -62,3 +62,5 @@ Route::post('dashboard/store', [\App\Http\Controllers\Admin\DashboardController:
 Route::get('profile', [\App\Http\Controllers\Admin\ProfileController::class,'index'])->name('admin.pages.profile');
 //Route::post('login/store', [\App\Http\Controllers\Admin\LoginController::class,'processLogin'])->name('admin.login.process');
 
+Route::get('editprofile', [\App\Http\Controllers\Front\EditprofileController::class,'index'])->name('front.editprofile');
+Route::post('editprofile/store', [\App\Http\Controllers\Front\EditprofileController::class,'processEditprofile'])->name('front.editprofile.process');

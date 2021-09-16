@@ -8,8 +8,6 @@
   <meta https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js>
   <meta https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css>
   <meta https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js>
-
-
 </header>
     <style type="text/css">
 
@@ -93,6 +91,11 @@ button:hover {
 .thanks-message {
     display: none
 }
+.option {
+    color: black;
+    border-top-color:yellow; 
+}
+
 
  </style>
 
@@ -177,14 +180,45 @@ for (i = 0; i < y.length; i++) { if (y[i].value=="" ) { y[i].className +=" inval
                     <p>Institution ID<input placeholder="Enter Institution ID" oninput="this.className = ''" name="instid"></p>
                     <p>Institution Name<input placeholder="Enter Institution Name" oninput="this.className = ''" name="instname"></p>
                 </div>
-                <div class="tab">
+                <div class="tab" style="color:black">
                     <p>Student ID / Index Number<input placeholder="Enter Student ID or Index number..." oninput="this.className = ''" name="stud-id"></p>
-                    <p>Certificate Number<input placeholder="Enter Certificate Number..." oninput="this.className = ''" name="certnum"></p>
-                </div>
+                    <p>Certificate Number<input placeholder="Issuing date..." oninput="this.className = ''" name="issue_date"></p>
+                    <p>Issuance Date<input placeholder="Enter Certificate Number..." oninput="this.className = ''" name="certnum"></p>
+                    <p>Course Tilte<input placeholder="Enter Course Title..." oninput="this.className = ''" name="course"></p>
+                      <div class="input-group">
+                      <p>Certificate Type</p><br>
+                            <select><br>
+                            <option>Select Certificate Type</option>
+                            <option>Educational Certificate</option>
+                            <option>Business Registration Number</option>
+                            <option>Business Operating Permit</option>
+                            <option>DVLA Licese</option>
+                            <option>DVLA Road Worthy Certificate</option>
+                            <option>Environmental Health Certificate</option>
+                            <option>Fire Certificate</option>
+                            <option>Birth and Death Certificates</option>
+                            <option>Tax Payer Identification Number (TIN) </option>
+                            <option>Vehicle Income Tax (VIT) </option> 
+                            </select>
+                            </div><br>
+                        <div class="input-group">
+                      <p>Graduating Class</p><br>
+                            <select><br>
+                            <option>Select Graduating Class</option>
+                            <option>First Class</option>
+                            <option>Second Class (Upper Division)</option>
+                            <option>Second Class (Lower Division)</option>
+                            <option>Third Class </option>
+                            <option>Pass</option>
+                            <option>Fail</option>
+                            </select>
+                            </div>
+                </div><br>
+                 
                 <div class="tab">
 
-                   
                    <p>Upload Certificate: <input type="File" name="Picture" id="image" /></p><br/><br/>
+                   <p>Upload ID Card: <input type="File" name="Picture" id="image" /></p><br/><br/>
                     
                     
                 </div>
@@ -196,7 +230,7 @@ for (i = 0; i < y.length; i++) { if (y[i].value=="" ) { y[i].className +=" inval
                         </div>   
                
                 <a href="{{route('front.addcert')}}"><button type="submit"   class="button button-contactForm boxed-btn" style="background-color:green" color="white">Add another certificate</a></button><br/>
-                <p>OR </p>
+                <p><h2><b>OR</b></h2> </p>
                 <a href="{{route('front.certveri')}}"><button type="submit"   class="button button-contactForm boxed-btn" style="background-color:green" color="white">Verify certificate</a></button>
               
                 </div>
@@ -217,11 +251,13 @@ for (i = 0; i < y.length; i++) { if (y[i].value=="" ) { y[i].className +=" inval
                 <a href="#!" class="text-white"><i class="fab fa-google fa-lg"></i></a>
               </div>
               </div>
-              <p class="mb-0" style="color:white">Have an account already? <a href="{{route('front.login')}}" class="text-white-50 fw-bold">Login Here</a></p>
+            
+             
+              <div align="center">
+              <p style="color:red"><a href="{{route('front.profile')}}">Back to Profile</a></p> <h4 style="color:white">OR</h4><p style="color:red"><a href="{{route('front.certveri')}}">Verify Certificate</a></p>
+              </div>
             </div>
               </div>
-
-        </div>
     </div>
 </div>
 </div>

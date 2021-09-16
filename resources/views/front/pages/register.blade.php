@@ -8,8 +8,6 @@
   <meta https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js>
   <meta https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css>
   <meta https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js>
-
-
 </header>
     <style type="text/css">
 
@@ -171,29 +169,30 @@ for (i = 0; i < y.length; i++) { if (y[i].value=="" ) { y[i].className +=" inval
 
                 </div>
                 <div class="tab">
+                    <p>Website<input placeholder="Website..." oninput="this.className = ''" name="website"></p>
                     <p>E-Mail<input placeholder="E-Mail..." oninput="this.className = ''" name="email"></p>
                     <p>Phone<input placeholder="Phone number..." oninput="this.className = ''" name="phone"></p>
                  
 
                 </div>
+                   
+                <div class="tab">
+                    <p>Institution ID<input placeholder="Institution ID" oninput="this.className = ''" name="inst-id"></p>
+                    <p>Institution Name<input placeholder="Institution Name..." oninput="this.className = ''" name="inst-name"></p>
+                    <p>Street<input placeholder="Street..." oninput="this.className = ''" name="street"></p>
+                    <p>City<input placeholder="City..." oninput="this.className = ''" name="city"></p>
+                    <p>Region<input placeholder="Region / Province..." oninput="this.className = ''" name="region"></p>
+                    <p>Country<input placeholder="Country..." oninput="this.className = ''" name="country"></p>
+                    <p>Zip<input placeholder="Zip..." oninput="this.className = ''" name="zip"></p>
+                </div>
                 <div class="tab">
                     <p>User Name<input placeholder="User name..." oninput="this.className = ''" name="uname"></p>
                     <p>Password<input placeholder="Enter Password..." oninput="this.className = ''" name="password"></p>
                     <p>Confirm Password<input placeholder="Re-enter password..." oninput="this.className = ''" name="password" required="False"></p>
-                                        
-
                 </div>
-               
-                <div class="tab">
-                    <p>Institution ID<input placeholder="Institution ID" oninput="this.className = ''" name="inst-id"></p>
-                    <p>Institution Name<input placeholder="Institution Name..." oninput="this.className = ''" name="inst-name"></p>
-                    <p>City<input placeholder="City..." oninput="this.className = ''" name="city"></p>
-                    <p>Region<input placeholder="Region / Province..." oninput="this.className = ''" name="region"></p>
-                    <p>Country<input placeholder="Country..." oninput="this.className = ''" name="country"></p>
-                </div>
-                 
+                  
                 <div class="thanks-message text-center" id="text-message"> <img src="ok.jpg" width="100" class="mb-4">
-                    <h3>Bravo! <br>Your Certificate has been successfully saved!!<br> Thank you for using CERTIFIER!!!</h3> 
+                    <h3>Congratulations <br>Your sign up request has been received!!<br> We will contact you shortly!!!</h3> 
                      <div class="form-group mt-3">
                             
                         </div>   
